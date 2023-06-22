@@ -8,13 +8,12 @@ Before running the script, ensure you have the following:
 
 - Python 3.x installed on your machine.
 - Meraki library installed. You can install it using `pip install meraki`.
-- Meraki API key exported as an environment variable with the name `MERAKI_DASHBOARD_API_KEY`. You can obtain an API key from the Meraki Dashboard.
+- Meraki API key exported as an environment variable with the name `MERAKI_DASHBOARD_API_KEY`. You can obtain an API key from the Meraki Dashboard:
+  `export MERAKI_DASHBOARD_API_KEY='YOUR API KEY'`
 
 ## Usage
 
 1. Clone the repository or download the script file to your local machine.
-
-2. Add your API Key to the envirement : `export MERAKI_DASHBOARD_API_KEY='YOUR API KEY'`
 
 3. Open the script file `Meraki_vpn_hub_updater.py` in a text editor.
 
