@@ -35,6 +35,14 @@ Before running the script, ensure you have the following:
 
 8. Monitor the output in the terminal for any errors or successful updates.
 
+## Contributing
+
+Contributions to this script are welcome. If you encounter any issues or have suggestions for improvements, please submit a pull request or open an issue on GitHub.
+
+## Author
+
+[Badr-eddine](https://www.linkedin.com/in/badreddine-aharchi)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
