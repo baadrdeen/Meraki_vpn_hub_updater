@@ -14,14 +14,14 @@ Before running the script, ensure you have the following:
 
 1. Clone the repository or download the script file to your local machine.
 
-2. Open the script file `vpn_hub_updater.py` in a text editor.
+2. Open the script file `Meraki_vpn_hub_updater.py` in a text editor.
 
 3. Modify the following variables at the top of the script:
 
    - `org_id`: Replace `'YOUR ORG ID'` with your actual organization ID.
    - `hub_name`: Replace `'YOUR HUB NAME'` with the desired VPN hub name.
 
-4. By default, the script is set to simulate the operation (`simulate=True`). It will only plan the updates without actually making changes to the Meraki networks. If you want to deploy the changes in the production environment, set `simulate=False` in the `dashboard` initialization.
+4. By default, the script is set to simulate the operation (`simulate=True`). It will only plan (simulate) the updates without actually making changes to the Meraki networks. If you want to deploy the changes in the production environment, set `simulate=False` in the `dashboard` initialization.
 
 5. Save the changes.
 
