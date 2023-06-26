@@ -40,11 +40,11 @@ pip install -r requirements.txt
 To update the VPN settings, run the script with the following command:
 
 ```shell
-python MerakiVPN-HubUpdater.py -s  # For simulate mode (default)
+python3 MerakiVPN-HubUpdater.py -s  # For simulate mode (default)
 ```
 
 ```shell
-python MerakiVPN-HubUpdater.py -d  # For deploy mode
+python3 MerakiVPN-HubUpdater.py -d  # For deploy mode
 ```
 
 - Simulate Mode (`-s` or `--simulate`): This mode simulates the VPN settings update without actually applying the changes. It is useful for testing and verifying the configuration before deployment.
