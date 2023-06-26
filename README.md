@@ -1,6 +1,6 @@
 # Meraki VPN Settings Update Script
 
-This script allows you to update the VPN settings for all networks in a Meraki organization. It leverages the Meraki Dashboard API to retrieve and update the VPN configuration.
+Managing VPN settings across multiple networks can be a time-consuming task. This script aims to automate and streamline the process by providing a simple and efficient way to update VPN hub configurations. Whether you need to replace an existing VPN hub with a new one or make changes to the VPN configuration, this script allows you to perform these updates across multiple networks in a consistent and scalable manner.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This script allows you to update the VPN settings for all networks in a Meraki o
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your-username/meraki-vpn-settings-update.git
+git clone https://github.com/baadrdeen/Meraki_vpn_hub_updater.git
 ```
 
 2. Install the required dependencies:
