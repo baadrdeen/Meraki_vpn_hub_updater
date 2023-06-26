@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+__author__ = "AHARCHI_Badr-eddine"
+
 import os
 import meraki
 import concurrent.futures
