@@ -1,68 +1,60 @@
-# Meraki VPN Hub Updater
+# Meraki VPN Settings Update Script
 
-The Meraki VPN Hub Updater is a Python script that allows you to update the VPN hub ID for multiple Meraki networks simultaneously. It uses the Meraki Dashboard API to fetch the current VPN settings for each network and update the hub ID with a new value.
+This script allows you to update the VPN settings for all networks in a Meraki organization. It leverages the Meraki Dashboard API to retrieve and update the VPN configuration.
 
 ## Prerequisites
 
-Before using the Meraki VPN Hub Updater, ensure that you have the following:
-
-- **Python 3.6 or higher**: The script requires Python to be installed on your machine.
-- **meraki**: The Meraki SDK for interacting with the Meraki Dashboard API.
-- **pandas**: A powerful data manipulation and analysis library.
-- **openpyxl**: A library for reading and writing Excel files.
-- **Meraki Dashboard API key**: In order to authenticate and access your Meraki organization, you'll need an API key. Follow these steps to obtain the API key:
-
-  1. Log in to the Meraki Dashboard.
-  2. Go to **Organization > Settings**.
-  3. Under the **Dashboard API access** section, click on the **Enable API** button.
-  4. Click on **Generate new API key** to obtain a new API key.
-  5. Copy the generated API key and store it securely.
+- Python 3.x
+- Meraki Dashboard API key ([Meraki Dashboard API Documentation](https://developer.cisco.com/meraki/api/))
+- Required Python libraries:
+  - `meraki`
+  - `pandas`
+  - `pyyaml`
+  - `pyyaml`
 
 ## Installation
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/meraki-vpn-hub-updater.git
-   ```
+```shell
+git clone https://github.com/your-username/meraki-vpn-settings-update.git
+```
 
-2. Navigate to the project directory:
+2. Install the required dependencies:
 
-   ```bash
-   cd meraki-vpn-hub-updater
-   ```
-
-3. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+```shell
+pip install -r requirements.txt
+```
 
 ## Configuration
 
-1. Open the `config.py` file.
-
-2. Replace the placeholder values with your actual Meraki organization ID, old hub name, and new hub name.
-
-   ```python
-   ORG_ID = 'YOUR_ORG_ID'
-   OLD_HUB_NAME = 'OLD_HUB_NAME'
-   NEW_HUB_NAME = 'NEW_HUB_NAME'
-   ```
+1.  Make sure to include all the necessary libraries in the "Prerequisites" section, and also update the "Installation" section to mention the installation of required dependencies using `pip install -r requirements.txt`.
+2.  Open the `config.yaml` file and provide the following information:
+   - `org_id`: Your Meraki organization ID.
+   - `old_hub_name`: The name of the old VPN hub you want to replace.
+   - `new_hub_name`: The name of the new VPN hub you want to set.
+3. Save the `config.yaml` file.
 
 ## Usage
 
-Run the script by executing the following command:
+To update the VPN settings, run the script with the following command:
 
-```bash
-python main.py
+```shell
+python MerakiVPN-HubUpdater.py -s  # For simulate mode (default)
 ```
 
-The script will fetch the list of networks in your organization, find the network IDs based on the provided hub names, and update the VPN hub ID for each network. The script will output the progress and any errors encountered during the update process. Once the updates are complete, a file named `vpn_settings_update.xlsx` will be generated, containing the network IDs, network names, old hub IDs, new hub IDs, old VPN settings configuration, and new VPN settings configuration.
+```shell
+python MerakiVPN-HubUpdater.py -d  # For deploy mode
+```
+
+- Simulate Mode (`-s` or `--simulate`): This mode simulates the VPN settings update without actually applying the changes. It is useful for testing and verifying the configuration before deployment.
+- Deploy Mode (`-d` or `--deploy`): This mode applies the VPN settings changes to the networks.
+
+After execution, the script will generate an Excel file named `vpn_settings_update.xlsx` containing the network ID, network name, old hub ID, new hub ID, old VPN settings configuration, and new VPN settings configuration for each updated network.
 
 ## Contributing
 
-Contributions to this script are welcome. If you encounter any issues or have suggestions for improvements, please submit a pull request or open an issue on GitHub.
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please create an issue or submit a pull request.
 
 ## Author
 
