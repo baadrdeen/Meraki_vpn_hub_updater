@@ -10,7 +10,7 @@ This script allows you to update the VPN settings for all networks in a Meraki o
   - `meraki`
   - `pandas`
   - `pyyaml`
-  - `pyyaml`
+  - `openpyxl`
 
 ## Installation
 
