@@ -50,7 +50,23 @@ python MerakiVPN-HubUpdater.py -d  # For deploy mode
 - Simulate Mode (`-s` or `--simulate`): This mode simulates the VPN settings update without actually applying the changes. It is useful for testing and verifying the configuration before deployment.
 - Deploy Mode (`-d` or `--deploy`): This mode applies the VPN settings changes to the networks.
 
-After execution, the script will generate an Excel file named `vpn_settings_update.xlsx` containing the network ID, network name, old hub ID, new hub ID, old VPN settings configuration, and new VPN settings configuration for each updated network.
+The script follows the following workflow:
+
+1. Read the configuration from `config.yaml`, including the organization ID, old hub name, and new hub name.
+2. Authenticate with the Meraki Dashboard API using the provided API key.
+3. Retrieve the list of networks in the organization.
+4. Find the network IDs for the old and new VPN hubs based on their names.
+5. Create an empty DataFrame to store the result of the VPN settings update.
+6. For each network:
+   - Retrieve the current VPN settings.
+   - If both old and new hub IDs are found:
+     - Update the VPN hub ID with the new value.
+     - Apply the updated VPN settings to the network.
+     - Append the network ID, network name, old hub ID, new hub ID, old VPN settings configuration, and new VPN settings configuration to the result DataFrame.
+   - If either the old or new hub ID is not found, skip the network.
+   - Introduce a delay between API calls to comply with rate limits.
+7. Save the result DataFrame to an Excel file named `vpn_settings_update.xlsx`.
+8. Print a success message and the path to the generated Excel file.
 
 ## Contributing
 
