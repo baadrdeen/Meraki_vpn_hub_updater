@@ -1,4 +1,4 @@
-# Meraki VPN Settings Update Script
+# Meraki VPN S2S hub Updater Script
 
 Managing VPN settings across multiple networks can be a time-consuming task. This script aims to automate and streamline the process by providing a simple and efficient way to update VPN hub configurations. Whether you need to replace an existing VPN hub with a new one or make changes to the VPN configuration, this script allows you to perform these updates across multiple networks in a consistent and scalable manner.
 
