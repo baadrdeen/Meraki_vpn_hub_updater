@@ -7,9 +7,9 @@ The Meraki VPN Hub Updater is a Python script that allows you to update the VPN 
 Before using the Meraki VPN Hub Updater, ensure that you have the following:
 
 - **Python 3.6 or higher**: The script requires Python to be installed on your machine.
-- **meraki: The Meraki SDK for interacting with the Meraki Dashboard API.
-- **pandas: A powerful data manipulation and analysis library.
-- **openpyxl: A library for reading and writing Excel files.
+- **meraki**: The Meraki SDK for interacting with the Meraki Dashboard API.
+- **pandas**: A powerful data manipulation and analysis library.
+- **openpyxl**: A library for reading and writing Excel files.
 - **Meraki Dashboard API key**: In order to authenticate and access your Meraki organization, you'll need an API key. Follow these steps to obtain the API key:
 
   1. Log in to the Meraki Dashboard.
