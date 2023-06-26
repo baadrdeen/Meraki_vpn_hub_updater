@@ -1,0 +1,4 @@
+# Configuration for VPN settings update script
+org_id: YOUR_ORG_ID               # Specify the meraki organization ID
+old_hub_name: OLD_HUB_NAME        # Specify the name of the new VPN hub you want to set
+new_hub_name: NEW_HUB_NAME        # Specify the name of the new VPN hub you want to set
