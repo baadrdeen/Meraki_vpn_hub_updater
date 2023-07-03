@@ -1,4 +1,6 @@
-# Meraki VPN S2S hub Updater Script
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/baadrdeen/Meraki_vpn_hub_updater)
+[![Run in Cisco Cloud IDE](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/devenv/?id=devenv-vscode-base&GITHUB_SOURCE_REPO=https://github.com/baadrdeen/Meraki_vpn_hub_updater)
+# Meraki VPN S2S hub Updater
 
 Managing VPN settings across multiple networks can be a time-consuming task. This script aims to automate and streamline the process by providing a simple and efficient way to update VPN hub configurations. Whether you need to replace an existing VPN hub with a new one or make changes to the VPN configuration, this script allows you to perform these updates across multiple networks in a consistent and scalable manner.
 
