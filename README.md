@@ -39,7 +39,7 @@ cd Meraki_vpn_hub_updater
 ```bash
 pip install -r requirements.txt
 ```
-<img src="media/Install requirements.gif" alt="Alt Text" width="500">
+<img src="media/Install requirements.gif" alt="Alt Text" width="950">
 
 ## Configuration
 
@@ -94,7 +94,7 @@ python3 MerakiVPN-HubUpdater.py -s
 - No actual changes will be made to your Meraki networks.
 
 
-<img src="media/demo.gif" alt="Alt Text" width="500">
+<img src="media/demo.gif" alt="Alt Text" width="950">
 
 To run the script in **deploy mode**:
 
