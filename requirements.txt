@@ -2,3 +2,5 @@ meraki
 pandas
 pyyaml
 openpyxl
+tqdm
+rich
