@@ -7,10 +7,11 @@ The Meraki AutoVPN Hub Update Script is a Python script that allows you to updat
 
 ## Features
 
-- Updates AutoVPN hub and hub order for Meraki networks
-- Supports simulation mode to test updates without making actual changes
-- Provides the ability to restore VPN settings from a backup file
-- Generates a report with details of the VPN settings updates
+- Update AutoVPN hub and hub order for multiple Meraki networks simultaneously.
+- Backup and restore VPN settings.
+- Simulation mode to test changes without making actual modifications.
+- Detailed logs for tracking operations.
+- Progress bar and status updates during network updates.
 
 ## Prerequisites
 
