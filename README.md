@@ -80,6 +80,8 @@ target: all
 
 The script can be executed using the command-line interface. There are two modes available: simulation mode and deploy mode.
 
+<img src="media/help.png" alt="Alt Text" width="500">
+
 To run the script in **simulation mode**:
 
 ```bash
