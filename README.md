@@ -39,15 +39,18 @@ cd Meraki_vpn_hub_updater
 ```bash
 pip install -r requirements.txt
 ```
+
 <img src="media/Install requirements.gif" alt="Alt Text" width="950">
 
 ## Configuration
 
 1. Open your command-line terminal and run the below command to temporarily store your API key as an environment variable:
+
 ```bash
 export MERAKI_DASHBOARD_API_KEY='API KEY'
-``` 
-3. Edit `config.yaml` file and provide the following information:
+```
+
+2. Edit `config.yaml` file and provide the following information:
 
 ```yaml
 # Organization ID
