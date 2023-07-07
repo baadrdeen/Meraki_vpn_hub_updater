@@ -31,7 +31,7 @@ git clone https://github.com/baadrdeen/Meraki_vpn_hub_updater.git
 2. Navigate to the project directory:
 
 ```bash
-cd Meraki_vpn_hub_update
+cd Meraki_vpn_hub_updater
 ```
 
 3. Install the required Python packages:
