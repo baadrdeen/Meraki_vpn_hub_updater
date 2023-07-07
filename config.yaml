@@ -1,4 +1,24 @@
-# Configuration for VPN settings update script
-org_id: YOUR_ORG_ID               # Specify the meraki organization ID
-old_hub_name: OLD_HUB_NAME        # Specify the name of the new VPN hub you want to set
-new_hub_name: NEW_HUB_NAME        # Specify the name of the new VPN hub you want to set
+# Configuration file for AutoVPN Hub Update Script
+
+# Organization ID
+org_id: YOUR_ORG_ID
+
+# Hub order option:
+# - primary   : Add the new hub as the primary hub
+# - secondary : Add the new hub as the secondary hub
+# - switch    : Switch the order of the existing hubs
+hub_order: secondary
+
+# Old hub name (required for 'primary' or 'secondary' hub order)
+old_hub_name: Old Hub Name
+
+# New hub name (required for 'primary' or 'secondary' hub order)
+new_hub_name: New Hub Name
+
+# Target networks to update. Set to 'all' to update all networks in the organization,
+# or provide a list of specific network IDs :
+# target:
+#    - netid1
+#    - netid2
+#    - netid3
+target: all
