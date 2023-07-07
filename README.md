@@ -39,6 +39,7 @@ cd Meraki_vpn_hub_updater
 ```bash
 pip install -r requirements.txt
 ```
+<img src="media/Install requirements.gif" alt="Alt Text" width="500">
 
 ## Configuration
 
@@ -91,6 +92,9 @@ python3 MerakiVPN-HubUpdater.py -s
 - The `-s` or `--simulate` flag enables simulation mode.
 - In this mode, the script will simulate the API requests and indicate them in the logs file.
 - No actual changes will be made to your Meraki networks.
+
+
+<img src="media/demo.gif" alt="Alt Text" width="500">
 
 To run the script in **deploy mode**:
 
